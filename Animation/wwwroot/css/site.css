@@ -1,0 +1,56 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(126, 132, 145) , rgb(176, 229, 238));
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".jpg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.file-upload-wrapper {
+    width: 800px;
+    padding: 100px 100px;
+    margin: 40px auto 0;
+    position: relative;
+    display: block;
+    background-image: linear-gradient(to right, rgb(146, 148, 151), rgb(215, 233, 236));
+    text-align: center;
+    border-style: inset;
+    box-shadow: 0 1px 0 rgb(83, 82, 82), 0 -1px 0 rgba(0,0,0,0.1), 0 -2px 0 rgba(129, 126, 126, 0.5);
+    text-shadow: 0 1px 0 white;
+    border-radius: 20px;
+}
+
+#input-file-now {
+
+}

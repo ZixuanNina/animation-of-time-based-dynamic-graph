@@ -15,3 +15,57 @@ body{
         display:none
     }
 }
+
+.box {
+    width: 800px;
+    padding: 100px 100px;
+    margin: 40px auto 0;
+    position: relative;
+    display: block;
+    background-image: linear-gradient(to right, rgb(146, 148, 151), rgb(215, 233, 236));
+    text-align: center;
+    border-style: inset;
+    box-shadow: 0 1px 0 rgb(83, 82, 82), 0 -1px 0 rgba(0,0,0,0.1), 0 -2px 0 rgba(129, 126, 126, 0.5);
+    text-shadow: 0 1px 0 white;
+    border-radius: 20px;
+}
+
+.box__file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+    .box__file + label {
+        font-size: 1.25em;
+        font-weight: 700;
+        color: white;
+        background-color: black;
+        display: inline-block;
+    }
+
+        .box__file:focus + label,
+        .box__file + label:hover {
+            background-color: red;
+        }
+
+
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+    display: none;
+}
+
+.box.has-advanced-upload {
+    background-color: white;
+    outline: 2px dashed black;
+    outline-offset: -10px;
+}
+
+    .box.has-advanced-upload .box__dragndrop {
+        display: inline;
+    }

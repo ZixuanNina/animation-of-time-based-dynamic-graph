@@ -6,14 +6,16 @@
         <title>@ViewData["Title"] - Dynamic Graph Animation</title>
 
         <environment include="Development">
-            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-            <link rel="stylesheet" href="~/css/site.css" />
+            <link href="http://fonts.googleapis.com/css?family=Open+Sans:400&subset=latin,cyrillic" type="text/css" rel="stylesheet" />
+            <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="/css/site.css" />
         </environment>
         <environment exclude="Development">
+            <link href="http://fonts.googleapis.com/css?family=Open+Sans:400&subset=latin,cyrillic" type="text/css" rel="stylesheet" />
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-href="/lib/bootstrap/dist/css/bootstrap.min.css"
                   asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+            <link rel="stylesheet" href="/css/site.min.css" asp-append-version="true" />
         </environment>
     </head>
     <body>
@@ -37,10 +39,7 @@
                 </div>
             </div>
         </nav>
-
-
-
-        <partial name="_CookieConsentPartial" />
+        
 
         <div class="container body-content">
             @RenderBody()
@@ -51,9 +50,9 @@
         </div>
 
         <environment include="Development">
-            <script src="~/lib/jquery/dist/jquery.js"></script>
-            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-            <script src="~/js/site.js" asp-append-version="true"></script>
+            <script src="/lib/jquery/dist/jquery.js"></script>
+            <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="/js/site.js" asp-append-version="true"></script>
         </environment>
         <environment exclude="Development">
             <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
@@ -66,7 +65,7 @@
                     asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
                     crossorigin="anonymous"
                     integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"></script>
-            <script src="~/js/site.min.js" asp-append-version="true"></script>
+            <script src="/js/site.min.js" asp-append-version="true"></script>
         </environment>
 
         @RenderSection("Scripts", required: false)
